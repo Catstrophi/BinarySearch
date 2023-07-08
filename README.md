@@ -16,9 +16,14 @@ Two variables, lMax and rMax, are initialized to store the leftmost and rightmos
 The code enters a while loop that continues until the leftmost index is less than or equal to the rightmost index.
 
 Inside the loop, the midpoint index (mid) is calculated as the average of the leftmost and rightmost indices.
+
 If the value at the midpoint index in the array matches the target value, it is found, and the midpoint index is returned.
+
 If the value at the midpoint index is less than the target value, the leftmost index is shifted to mid + 1 to search in the right half of the array.
+
 If the value at the midpoint index is greater than the target value, the rightmost index is shifted to mid - 1 to search in the left half of the array.
+
 If the target value is not found in the array, the loop continues until the leftmost index becomes greater than the rightmost index.
+
 In that case, the method returns -1 to indicate that the target value was not found.
 
